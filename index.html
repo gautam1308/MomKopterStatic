@@ -1,24 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MomKopter - Expert Career Counselling & Guidance</title>
     <meta name="description" content="Professional career counselling services to help students and professionals make informed career decisions. Personalized guidance from experienced counsellors." />
     <meta name="author" content="MomKopter" />
-
+    
     <meta property="og:title" content="MomKopter - Expert Career Counselling" />
     <meta property="og:description" content="Empowering careers with personalized guidance and expert insights. Transform your professional journey with MomKopter." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">MomKopter</a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#why-choose">Why Choose Us</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Shape Your Future with Expert Career Guidance</h1>
+                    <p>Personalized career counselling to help you make informed decisions and achieve your professional goals</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#services" class="btn btn-secondary">Our Services</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students Guided</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Career Paths</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="src/assets/hero-counsellor.jpg" alt="Professional career counsellor guiding students">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="src/assets/about-illustration.jpg" alt="Career counselling session illustration">
+                </div>
+                <div class="about-text">
+                    <h2>About <span class="highlight">MomKopter</span></h2>
+                    <p class="lead">Empowering careers through personalized guidance and expert insights</p>
+                    <p>At MomKopter, we believe that every individual has unique talents and aspirations. Our mission is to help you discover your true potential and guide you towards a fulfilling career path that aligns with your strengths and interests.</p>
+                    <p>With years of experience in career counselling and a deep understanding of various industries, our team of expert counsellors provides personalized guidance to students and professionals alike.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                            </svg>
+                            <span>Personalized Approach</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                            </svg>
+                            <span>Expert Counsellors</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                            </svg>
+                            <span>Proven Track Record</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Services</span></h2>
+                <p>Comprehensive career counselling services tailored to your unique needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Career Assessment</h3>
+                    <p>Comprehensive aptitude and personality tests to identify your strengths and ideal career paths.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3>Goal Setting</h3>
+                    <p>Strategic planning and roadmap creation to help you achieve your career objectives effectively.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Skill Development</h3>
+                    <p>Identify skill gaps and receive guidance on courses and certifications to enhance your profile.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 010 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>One-on-One Counselling</h3>
+                    <p>Personalized sessions with experienced counsellors who understand your unique aspirations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Industry Insights</h3>
+                    <p>Stay updated with current industry trends, job market analysis, and emerging opportunities.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>College & Course Selection</h3>
+                    <p>Expert advice on choosing the right educational path aligned with your career goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span class="highlight">MomKopter</span></h2>
+                <p>What sets us apart in career counselling</p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-number">01</div>
+                    <h3>Personalized Guidance</h3>
+                    <p>We understand that every individual is unique. Our counsellors take time to understand your aspirations, strengths, and challenges to provide tailored advice.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">02</div>
+                    <h3>Experienced Counsellors</h3>
+                    <p>Our team consists of seasoned professionals with years of experience in career counselling and deep industry knowledge across various sectors.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">03</div>
+                    <h3>Holistic Approach</h3>
+                    <p>We don't just suggest careers - we help you understand yourself better through comprehensive assessments and explore multiple pathways.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">04</div>
+                    <h3>Ongoing Support</h3>
+                    <p>Career planning is a journey. We provide continuous support and guidance as you progress through different stages of your career.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">05</div>
+                    <h3>Current Industry Insights</h3>
+                    <p>Stay ahead with up-to-date information about emerging career opportunities, market trends, and in-demand skills.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-number">06</div>
+                    <h3>Proven Success</h3>
+                    <p>With hundreds of successful career transitions and satisfied clients, our track record speaks for itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Get answers to common questions about our career counselling services</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is career counselling and how can it help me?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Career counselling is a professional service that helps you understand your strengths, interests, and aptitudes to make informed career decisions. Our counsellors use scientific assessments, one-on-one discussions, and industry insights to guide you towards a fulfilling career path that aligns with your unique profile.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Who can benefit from career counselling services?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our services are valuable for students choosing streams after 10th or 12th grade, college students selecting majors, fresh graduates entering the job market, and professionals considering career changes or advancement. Anyone seeking clarity about their career path can benefit from our guidance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What does the counselling process involve?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our process typically includes: initial consultation to understand your background and goals, comprehensive aptitude and personality assessments, detailed analysis of results, one-on-one counselling sessions to discuss career options, and a personalized action plan with recommended steps and resources.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does the career counselling process take?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The duration varies based on individual needs. Typically, the assessment and initial counselling sessions take 2-3 hours, spread over a week. However, career planning is an ongoing journey, and we provide follow-up support as needed throughout your career development.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide counselling for working professionals?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We work with professionals at all career stages - whether you're considering a career change, seeking advancement opportunities, or wanting to transition to a new industry. We provide guidance on skill development, market positioning, and strategic career moves.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I get started with MomKopter?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Getting started is simple! Contact us through the form below, call us, or send an email. We'll schedule an initial consultation to understand your needs and explain our services in detail. From there, we'll create a customized counselling plan tailored to your goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p>Ready to start your career journey? Contact us today</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Reach out to us and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Bangalore, Karnataka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@momkopter.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/momkopter/" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MomKopter</h3>
+                    <p>Empowering careers with personalized guidance and expert insights.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Bangalore, Karnataka</li>
+                        <li>+91 XXXXX XXXXX</li>
+                        <li>contact@momkopter.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MomKopter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
